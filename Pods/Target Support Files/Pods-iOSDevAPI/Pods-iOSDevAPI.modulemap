@@ -1,0 +1,6 @@
+framework module Pods_iOSDevAPI {
+  umbrella header "Pods-iOSDevAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}
