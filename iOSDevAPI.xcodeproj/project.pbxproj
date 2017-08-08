@@ -14,6 +14,7 @@
 		FB52D2B31F3864E900F7BDEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB52D2B11F3864E900F7BDEF /* Main.storyboard */; };
 		FB52D2B51F3864E900F7BDEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB52D2B41F3864E900F7BDEF /* Assets.xcassets */; };
 		FB52D2B81F3864E900F7BDEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB52D2B61F3864E900F7BDEF /* LaunchScreen.storyboard */; };
+		FBB798361F397C9C00428F4D /* AccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB798351F397C9C00428F4D /* AccessToken.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		FB52D2B41F3864E900F7BDEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB52D2B71F3864E900F7BDEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB52D2B91F3864E900F7BDEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBB798341F397C9C00428F4D /* AccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessToken.h; sourceTree = "<group>"; };
+		FBB798351F397C9C00428F4D /* AccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessToken.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 		FB52D2A71F3864E900F7BDEF /* iOSDevAPI */ = {
 			isa = PBXGroup;
 			children = (
+				FBB798371F397CAF00428F4D /* API */,
 				FB52D2AB1F3864E900F7BDEF /* AppDelegate.h */,
 				FB52D2AC1F3864E900F7BDEF /* AppDelegate.m */,
 				FB52D2AE1F3864E900F7BDEF /* ViewController.h */,
@@ -101,6 +105,15 @@
 				FB52D2A91F3864E900F7BDEF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBB798371F397CAF00428F4D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FBB798341F397C9C00428F4D /* AccessToken.h */,
+				FBB798351F397C9C00428F4D /* AccessToken.m */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +241,7 @@
 				FB52D2B01F3864E900F7BDEF /* ViewController.m in Sources */,
 				FB52D2AD1F3864E900F7BDEF /* AppDelegate.m in Sources */,
 				FB52D2AA1F3864E900F7BDEF /* main.m in Sources */,
+				FBB798361F397C9C00428F4D /* AccessToken.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +400,7 @@
 				FB52D2BE1F3864E900F7BDEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
