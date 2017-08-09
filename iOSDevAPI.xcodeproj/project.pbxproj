@@ -14,6 +14,8 @@
 		FB52D2B31F3864E900F7BDEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB52D2B11F3864E900F7BDEF /* Main.storyboard */; };
 		FB52D2B51F3864E900F7BDEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB52D2B41F3864E900F7BDEF /* Assets.xcassets */; };
 		FB52D2B81F3864E900F7BDEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB52D2B61F3864E900F7BDEF /* LaunchScreen.storyboard */; };
+		FB8A92A61F3AD4D400BFF965 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8A92A51F3AD4D400BFF965 /* APIManager.m */; };
+		FB8A92A91F3AD51100BFF965 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8A92A81F3AD51100BFF965 /* User.m */; };
 		FBB798361F397C9C00428F4D /* AccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB798351F397C9C00428F4D /* AccessToken.m */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,10 @@
 		FB52D2B41F3864E900F7BDEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB52D2B71F3864E900F7BDEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB52D2B91F3864E900F7BDEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB8A92A41F3AD4D400BFF965 /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		FB8A92A51F3AD4D400BFF965 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		FB8A92A71F3AD51100BFF965 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		FB8A92A81F3AD51100BFF965 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		FBB798341F397C9C00428F4D /* AccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessToken.h; sourceTree = "<group>"; };
 		FBB798351F397C9C00428F4D /* AccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessToken.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +91,7 @@
 		FB52D2A71F3864E900F7BDEF /* iOSDevAPI */ = {
 			isa = PBXGroup;
 			children = (
+				FB8A92AA1F3AD52300BFF965 /* Model */,
 				FBB798371F397CAF00428F4D /* API */,
 				FB52D2AB1F3864E900F7BDEF /* AppDelegate.h */,
 				FB52D2AC1F3864E900F7BDEF /* AppDelegate.m */,
@@ -107,11 +114,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FB8A92AA1F3AD52300BFF965 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB8A92A71F3AD51100BFF965 /* User.h */,
+				FB8A92A81F3AD51100BFF965 /* User.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		FBB798371F397CAF00428F4D /* API */ = {
 			isa = PBXGroup;
 			children = (
 				FBB798341F397C9C00428F4D /* AccessToken.h */,
 				FBB798351F397C9C00428F4D /* AccessToken.m */,
+				FB8A92A41F3AD4D400BFF965 /* APIManager.h */,
+				FB8A92A51F3AD4D400BFF965 /* APIManager.m */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -240,8 +258,10 @@
 			files = (
 				FB52D2B01F3864E900F7BDEF /* ViewController.m in Sources */,
 				FB52D2AD1F3864E900F7BDEF /* AppDelegate.m in Sources */,
+				FB8A92A91F3AD51100BFF965 /* User.m in Sources */,
 				FB52D2AA1F3864E900F7BDEF /* main.m in Sources */,
 				FBB798361F397C9C00428F4D /* AccessToken.m in Sources */,
+				FB8A92A61F3AD4D400BFF965 /* APIManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

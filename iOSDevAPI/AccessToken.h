@@ -10,8 +10,11 @@
 
 @interface AccessToken : NSObject
 
-@property (nonatomic, strong) NSString *acsee_token;
-@property (nonatomic, strong) NSDate *eexpirationDate;
-@property (nonatomic, strong) NSString *userID;
+@property (strong, nonatomic) NSString *access_token;
+@property (strong, nonatomic) NSDate *expires_in;
+@property (strong, nonatomic) NSString *userID;
+@property (strong, nonatomic) NSString *email;
+
+- (instancetype)initWithComponents:(NSDictionary *)components;
 
 @end
