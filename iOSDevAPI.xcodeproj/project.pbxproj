@@ -17,6 +17,7 @@
 		FB8A92A61F3AD4D400BFF965 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8A92A51F3AD4D400BFF965 /* APIManager.m */; };
 		FB8A92A91F3AD51100BFF965 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8A92A81F3AD51100BFF965 /* User.m */; };
 		FBB798361F397C9C00428F4D /* AccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB798351F397C9C00428F4D /* AccessToken.m */; };
+		FBBC71BE1F41450B00F4BB85 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBC71BD1F41450B00F4BB85 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		FB8A92A81F3AD51100BFF965 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		FBB798341F397C9C00428F4D /* AccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessToken.h; sourceTree = "<group>"; };
 		FBB798351F397C9C00428F4D /* AccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessToken.m; sourceTree = "<group>"; };
+		FBBC71BC1F41450B00F4BB85 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FBBC71BD1F41450B00F4BB85 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,7 @@
 		FB52D2A71F3864E900F7BDEF /* iOSDevAPI */ = {
 			isa = PBXGroup;
 			children = (
+				FBBC71BB1F4144EF00F4BB85 /* Controllers */,
 				FB8A92AA1F3AD52300BFF965 /* Model */,
 				FBB798371F397CAF00428F4D /* API */,
 				FB52D2AB1F3864E900F7BDEF /* AppDelegate.h */,
@@ -132,6 +136,15 @@
 				FB8A92A51F3AD4D400BFF965 /* APIManager.m */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		FBBC71BB1F4144EF00F4BB85 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FBBC71BC1F41450B00F4BB85 /* LoginViewController.h */,
+				FBBC71BD1F41450B00F4BB85 /* LoginViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +273,7 @@
 				FB52D2AD1F3864E900F7BDEF /* AppDelegate.m in Sources */,
 				FB8A92A91F3AD51100BFF965 /* User.m in Sources */,
 				FB52D2AA1F3864E900F7BDEF /* main.m in Sources */,
+				FBBC71BE1F41450B00F4BB85 /* LoginViewController.m in Sources */,
 				FBB798361F397C9C00428F4D /* AccessToken.m in Sources */,
 				FB8A92A61F3AD4D400BFF965 /* APIManager.m in Sources */,
 			);

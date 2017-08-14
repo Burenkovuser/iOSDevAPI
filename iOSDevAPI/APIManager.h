@@ -8,6 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
+//Model
+@class User;
+
 @interface APIManager : NSObject
+
++(APIManager *) sharedManager;
+
+#pragma mark - ---=== AUTH ===---
+- (void)authorizeUser:(void(^)(User *user))success
+              failure:(void(^)(NSError *error))failure;
+
+#pragma mark - ---=== GET ===---
+
+#pragma mark - User
+- (void)getUserWithUserID:(NSString *)userID
+                  success:(void(^)(User *user))success
+                  failure:(void(^)(NSError *error))failure;
 
 @end
